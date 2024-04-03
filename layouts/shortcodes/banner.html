@@ -1,0 +1,10 @@
+<div class="banner">
+    <div class="banner-left">
+        {{ with .Get "title" }}
+          <h1 class="banner-title">{{ . }}</h1>
+        {{ end }}
+        <div class="banner-content">
+            <p>{{ trim .Inner "\r\n" }}</p>
+        </div>
+    </div>
+</div>  

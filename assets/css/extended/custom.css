@@ -1,0 +1,313 @@
+/* @font-face {
+    font-family: 'Crimson Pro';
+    src: url('/fonts/CrimsonPro-Regular.woff2') format('woff2'),
+        url('/fonts/CrimsonPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Pro Italic';
+    src: url('/fonts/CrimsonPro-Italic.woff2') format('woff2'),
+        url('/fonts/CrimsonPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Crimson Pro Light';
+    src: url('/fonts/CrimsonPro-Light.woff2') format('woff2'),
+        url('/fonts/CrimsonPro-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+        url('/fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Medium';
+    src: url('/fonts/Inter-Medium.woff2') format('woff2'),
+        url('/fonts/Inter-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('/fonts/Inter-Bold.woff2') format('woff2'),
+        url('/fonts/Inter-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+/* @font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.woff2') format('woff2'),
+        url('/fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Signika';
+    src: url('/fonts/Signika-Bold.woff2') format('woff2'),
+        url('/fonts/Signika-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('/fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('/fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('/fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary: #27272a;
+    --main-width: 1024px;
+    --post-width: 1024px;
+    --nav-width: 1024px;
+    --code-bg: hsl(225deg, 25%, 97%);
+    --content: #52525b;
+    --border: #f4f4f5;
+    --radius: .375rem;
+}
+
+.dark {
+    /* --code-bg: red; */
+    --primary: white;
+    --content: #a1a1aa;
+    --border: hsla(240,5%,84%,.2);
+}
+
+.dark .main,
+.dark .nav {
+    background: #18181b;
+}
+
+.dark .footer {
+    background: #18181b;
+
+}
+
+.main {
+    background: white;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 2rem;
+}
+
+.footer {
+    background: white;
+    border: 1px solid var(--border);
+}
+
+.list-page {
+    background: #fafafa;
+}
+
+.post-entry:last-of-type {
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -.025em;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.post-content {
+    font-size: 1rem;
+}
+
+.logo {
+    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -.025em;
+}
+
+.nav {
+    font-family: "Open Sans", sans-serif;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background: white;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+}
+
+/* .first-entry .entry-header h2 {
+    font-family: "Crimson Pro", serif;
+    font-weight: 400;
+    font-size: 42px;
+} */
+
+/* .first-entry .entry-content {
+    font-size: 20px;
+}
+
+.first-entry .entry-footer {
+    font-size: 18px;
+}
+
+.entry-header h2 {
+    font-family: "Crimson Pro", serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.entry-content {
+    font-size: 18px;
+}
+
+.entry-footer {
+    font-family: "Crimson Pro", serif;
+    font-size: 18px;
+}
+
+.entry-footer, .entry-footer span > a {
+    font-size: 18px;
+}
+
+h1.post-title {
+    font-family: "Crimson Pro", serif;
+    font-weight: 400;
+    font-size: 64px;
+}
+
+.post-meta {
+    font-family: "Crimson Pro", serif;
+    font-size: 20px;
+}
+
+.post-meta .post-tags {
+    font-family: "Crimson Pro Italic", serif;
+} */
+
+.post-content code {
+    font-size: 1rem;
+}
+
+.post-content pre code {
+    border-radius: 0;
+}
+
+.banner {
+    /* text-align: center; */
+    display: flex;
+}
+
+.banner-left {
+    max-width: 42rem;
+}
+
+.banner-content {
+
+}
+
+.work {
+    margin-top: var(--gap);
+    margin-bottom: var(--gap);
+}
+
+.work > p {
+    color: var(--primary);
+    font-size: 1.4rem;
+}
+
+.workedwith {
+    /* border: 1px solid var(--border); */
+    /* background-color: rgba(39,39,42,.9); */
+    border-radius: 1rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: var(--gap);
+}
+
+.workedwith-logo {
+    /* border: 1px solid red; */
+    flex-grow: 1;
+    /* flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    padding: 0 1.5rem; */
+}
+
+/* .workedwith-logo--wide {
+    flex: 0 0 25%;
+    max-width: 25%;
+} */
+
+.workedwith-logo--redrow {
+    flex-grow: 0.54;
+}
+
+.workedwith-logo--seddon {
+    flex-grow: 0.45;
+}
+
+.workedwith-logo--ans {
+    flex-grow: 0.32;
+}
+
+.workedwith-logo--square {
+    flex-grow: 0.15;
+}
+
+.workedwith-logo--revolution {
+    flex-grow: 0.8;
+}
+
+.workedwith-logo--cashgen {
+    flex-grow: 0.8;
+}
+
+.workedwith--dark {
+    display: none;
+}
+
+.dark .workedwith--dark {
+    display: flex;
+}
+
+.dark .workedwith--colour {
+    display: none;
+}

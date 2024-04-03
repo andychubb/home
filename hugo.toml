@@ -1,4 +1,41 @@
 baseURL = 'https://andychubb.dev/'
 languageCode = 'en-us'
-title = 'Andrew Chubb'
+title = 'Andy Chubb'
 theme = 'PaperModX'
+
+[params]
+DateFormat = "January 2, 2006"
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+defaultTheme = "dark"
+disableThemeToggle = false
+
+[taxonomies]
+tag = 'tags'
+
+[markup]
+  [markup.highlight]
+    style = 'onedark'
+    tabWidth = 2
+
+
+[[menu.main]]
+identifier = "About"
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+identifier = "Work"
+name = "Work"
+url = "/work/"
+weight = 20
+
+[[menu.main]]
+identifier = "Tags"
+name = "Tags"
+url = "/tags/"
+weight = 30

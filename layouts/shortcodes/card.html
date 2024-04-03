@@ -1,0 +1,8 @@
+<div class="card">
+    {{ with .Get "title" }}
+      <div class="card-title">{{ . }}</div>
+    {{ end }}
+    <div class="card-content">
+        {{ trim .Inner "\r\n" | .Page.RenderString }}
+    </div>
+</div>  
